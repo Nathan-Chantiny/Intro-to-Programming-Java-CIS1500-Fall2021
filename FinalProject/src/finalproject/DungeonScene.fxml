@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="finalproject.DungeonSceneController">
+   <children>
+      <ImageView fitHeight="450.0" fitWidth="600.0" pickOnBounds="true">
+         <image>
+            <Image url="@trippy.gif" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="336.0" layoutX="14.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="572.0" />
+      <ImageView fitHeight="334.0" fitWidth="570.0" layoutX="15.0" layoutY="15.0" pickOnBounds="true">
+         <image>
+            <Image url="@dungeon1.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="30.0" layoutY="184.0" pickOnBounds="true">
+         <image>
+            <Image url="@theOffice.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="enemyPicture" fitHeight="150.0" fitWidth="150.0" layoutX="420.0" layoutY="30.0" pickOnBounds="true">
+         <image>
+            <Image url="@sullivan.gif" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffff87" height="71.0" layoutX="15.0" layoutY="364.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="570.0" />
+      <Button layoutX="270.0" layoutY="374.0" mnemonicParsing="false" onAction="#searchTap" prefHeight="17.0" prefWidth="141.5" text="Search" />
+      <Button layoutX="428.0" layoutY="374.0" mnemonicParsing="false" onAction="#fightTap" prefHeight="17.0" prefWidth="141.5" text="Fight" />
+      <Button layoutX="270.0" layoutY="400.0" mnemonicParsing="false" onAction="#runTap" prefHeight="17.0" prefWidth="141.5" text="Run" />
+      <Button layoutX="428.0" layoutY="400.0" mnemonicParsing="false" onAction="#sleepTap" prefHeight="17.0" prefWidth="141.5" text="Sleep" />
+      <Rectangle fx:id="monsterHPBox" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="47.0" layoutX="30.0" layoutY="30.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="375.0" />
+      <Label fx:id="monsterHP" contentDisplay="CENTER" layoutX="45.0" layoutY="30.0" prefHeight="47.0" prefWidth="360.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="47.0" layoutX="195.0" layoutY="287.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="375.0" />
+      <Label fx:id="playerHP" contentDisplay="CENTER" layoutX="210.0" layoutY="287.0" prefHeight="47.0" prefWidth="360.0">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="51.0" layoutX="30.0" layoutY="374.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="225.0" />
+      <Label fx:id="outputText" alignment="CENTER" contentDisplay="CENTER" layoutX="30.0" layoutY="374.0" prefHeight="51.0" prefWidth="225.0" textAlignment="CENTER" wrapText="true" />
+      <Button layoutX="410.0" layoutY="374.0" mnemonicParsing="false" onAction="#inventoryTap" prefHeight="51.0" prefWidth="17.0" text="I" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="finalproject.ShopPlayerInventoryController">
+   <children>
+      <ImageView fitHeight="450.0" fitWidth="600.0" pickOnBounds="true">
+         <image>
+            <Image url="@trippy.gif" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="70.0" layoutX="15.0" layoutY="15.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="277.5" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="70.0" layoutX="307.5" layoutY="15.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="277.5" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="70.0" layoutX="15.0" layoutY="365.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="277.5" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="250.0" layoutX="15.0" layoutY="100.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="277.5" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="335.0" layoutX="307.5" layoutY="100.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="277.5" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="15.0" layoutY="15.0" prefHeight="70.0" prefWidth="277.5" text="Shop" textAlignment="CENTER">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="307.5" layoutY="15.0" prefHeight="70.0" prefWidth="277.5" text="Inventory" textAlignment="CENTER">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Button layoutX="197.0" layoutY="386.0" mnemonicParsing="false" onAction="#buyTap" prefHeight="27.5" prefWidth="45.0" text="Buy" />
+      <Button layoutX="535.0" layoutY="15.0" mnemonicParsing="false" onAction="#leaveShopTap" opacity="0.25" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 100;" text="X">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Button>
+      <ChoiceBox fx:id="shopInventory" layoutX="30.0" layoutY="115.0" prefWidth="116.25" />
+      <Label fx:id="pricePerItem" layoutX="30.0" layoutY="199.0" prefHeight="51.0" prefWidth="116.25" />
+      <Label fx:id="totalCostOfItems" alignment="CENTER" contentDisplay="CENTER" layoutX="30.0" layoutY="374.0" prefHeight="51.0" prefWidth="157.0" textAlignment="CENTER" wrapText="true" />
+      <ChoiceBox fx:id="shopQuantity" layoutX="161.0" layoutY="115.0" prefWidth="116.25" />
+      <ListView fx:id="inventoryList" layoutX="322.5" layoutY="115.0" prefHeight="305.0" prefWidth="247.5" style="-fx-border-style: none;" />
+   </children>
+</AnchorPane>
